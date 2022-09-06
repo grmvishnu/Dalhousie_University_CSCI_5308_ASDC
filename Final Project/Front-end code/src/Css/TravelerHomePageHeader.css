@@ -1,0 +1,8 @@
+.userprofileicon {
+    cursor: pointer;
+    display: none;
+}
+
+.icon {
+    font-size: 2rem;
+}

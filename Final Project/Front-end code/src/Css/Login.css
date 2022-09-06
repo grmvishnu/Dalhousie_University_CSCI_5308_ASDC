@@ -1,0 +1,38 @@
+.mainForm {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.label {
+  font-size: large;
+}
+
+.submitBtn {
+  line-height: 1.5;
+  display: inline-block;
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  border-color: #5e72e4;
+  color: #fff;
+  background-color: #5e72e4;
+}
+
+.formField {
+  font-size: 0.875rem;
+  line-height: 1.8;
+  width: 100%;
+  font-weight: 350;
+  border-radius: 0.25rem;
+  height: calc(1.5em + 1.25rem + 2px);
+  padding: 0.625rem 0.75rem;
+  transition: all 0.15s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #8898aa;
+  display: block;
+  border: 1px solid #dee2e6;
+  background-color: #fff;
+  background-clip: padding-box;
+}

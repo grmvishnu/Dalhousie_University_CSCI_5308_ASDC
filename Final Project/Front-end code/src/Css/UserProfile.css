@@ -1,0 +1,24 @@
+.userProfileForm {
+  position: absolute;
+  margin-left: 25vw;
+  margin-top: 2%;
+}
+.formField {
+  font-size: 0.875rem;
+  line-height: 1.8;
+  width: 100%;
+  font-weight: 350;
+  border-radius: 0.25rem;
+  height: calc(1.5em + 1.25rem + 2px);
+  padding: 0.625rem 0.75rem;
+  transition: all 0.15s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #000000;
+  display: block;
+  border: 1px solid #dee2e6;
+  background-color: #fff;
+  background-clip: padding-box;
+}
+
+.submitBtn {
+  margin-top: 2%;
+}

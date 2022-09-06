@@ -1,0 +1,15 @@
+.with-detail-accepted-btn {
+  background: beige;
+  padding: 2% 0;
+  margin: auto;
+  width: 50%;
+  border: 1px solid green;
+}
+
+.with-detail-btn {
+  background: beige;
+  padding: 2% 0;
+  margin: auto;
+  width: 50%;
+  border: 1px solid red;
+}

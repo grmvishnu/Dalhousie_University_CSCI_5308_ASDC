@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:th='http://www.thymeleaf.org'>
+<head>
+    <title>Checkout</title>
+    <h1 style="color: #26a69a">Please pay here!</h1>
+    <style>
+        body {
+            background-color: white;
+            font-family: 'arial';
+            font-size: medium;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            margin-top: -150px;
+            margin-left: -150px;
+        }
+
+        #checkout-form input,
+        #checkout-form button {
+            display: block;
+            /*margin: 12px;*/
+        }
+    </style>
+</head>
+<body>
+<form action='/charge' method='POST' id='checkout-form'>
+    <input type='hidden' th:value='${trip}' name='trip' />
+    <p>
+        <label>Amount:</label>
+        <input style="appearance: textfield" type="number" th:value='${amount}' name='amount'/>
+    </p>
+
+    <!-- NOTE: data-key/data-amount/data-currency will be rendered by Thymeleaf -->
+    <script
+            src='https://checkout.stripe.com/checkout.js'
+            class='stripe-button'
+            th:attr='data-key=${stripePublicKey},
+                         data-amount=${amount},
+                         data-currency=${currency}'
+            data-name='BudgetSurf'
+            data-description='Advance pre-payment'
+            data-locale='auto'
+            data-zip-code='false'>
+    </script>
+</form>
+</body>
+</html>
